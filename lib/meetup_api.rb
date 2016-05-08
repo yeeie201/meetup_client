@@ -2,7 +2,7 @@ require 'api_callers/json_request'
 require 'api_callers/http_requester'
 
 class MeetupApi
-  BASE_URL = 'http://api.meetup.com/2/'
+  BASE_URL = 'http://api.meetup.com/'
 
   def method_request(method, params)
     params = params.merge( { key: ::MeetupClient.config.api_key } )
